@@ -1,0 +1,108 @@
+<!-- Write a HTML program, to explain the working of forms by designing Registration form. 
+(Note: Include text field, password field, number field, date of birth field, checkboxes,radio
+buttons,list boxes using <select>&<option> tags, <text area> and two buttons ie:submit and 
+reset. Use tables to provide a better view). -->
+<!doctype html>
+<html>
+    <head></head>
+    <style>
+        th,td{
+            padding:5px;
+        }
+        table{
+            border-spacing:auto;
+            border:1px solid red;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+    </style>
+    <body style="background-image: url('download.jpg');background-size: cover;">
+        <form>
+            <table style="background-color: rgb(219, 179, 198);">
+                <caption>Registration form</caption>
+                <tr>
+                    <td>
+            <label for="firstname">firstname:</label></td>
+            <td>
+            <input type="text" id="firstname" name="firstname" placeholder="enter your first name">
+        </td>
+        </tr>
+        <tr>
+            <td><label for="lastname">lastname:</label></td>
+            <td><input type="text" id="lastname" name="lastname" placeholder="enter your lastname"></td>
+        </tr>
+        <tr>
+            <td><lable for="email">email id:</lable></td>
+            <td><input type="email" id="email" name="email" placeholder="email id enter"></td>
+        </tr>
+        <tr>
+        <td><label for="password">password:</label></td>
+            <td><input type="password" id="password" name="password" placeholder="enter the password"></td>
+        </tr>
+        <tr>
+            <td><label for="confirm">confirmpassword:</label></td>
+            <td><input type="password" id="confirm" name="confirm" placeholder="confirm the passwrd"></td>
+        </tr>
+        <tr>
+            <td><label for="gender">gender</label></td>
+            <td><label for="male">male</label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender">
+            <label for="male">transgender</label>
+            <input type="radio" id="trans" name="gender"></td>
+        </tr>
+        <tr>
+            <td><span>hobbies</span></td>
+            <td><lable for="tv">watching tv</lable>
+            <input type="checkbox" id="tv" name="hobbies">
+        
+            <lable for="games">playing games</lable>
+            <input type="checkbox" id="games" name="hobbies">
+            
+            <lable for="music`">listening music</lable>
+            <input type="checkbox" id="music" name="hobbies">
+        </td>
+        </tr>
+        <tr>
+            <td><label for="age">age</label></td>
+            <td><input type="number" id="age" name="age" placeholder="enter the age" min="1" max="100"></td>
+        </tr>
+        <tr>
+            <td><lable for="dob">date of birth</lable></td>
+            <td><input type="date" id="dob" name="dob"></td>
+        </tr>
+        <tr>
+            <td><span>country</span></td>
+            <td><select id="country" name="country">
+                <option value="">select country</option>
+                <option value="india">india</option>
+                <option value="africa">africa</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="comments">comments</lable></td>
+        
+           <td><textarea id="comments" name="comments" placeholder="enter the comments" rows="10" cols="50"></textarea>
+           </td>
+        </tr>
+        <tr>
+            <td>select ur favourite food</td>
+            <td><input list="favFood" placeholder="favourite food"></td>
+            <datalist id="favFood" >
+                <option value="idly">idly</option>
+                <option value="dosa">dosa</option>
+            </datalist>
+        </tr>
+        <tr>
+            <td><button>subkit</button></td>
+            <td><button>reset</button></td>
+        </tr>
+        </table>
+
+            
+        </form>
+    </body>
+</html>
